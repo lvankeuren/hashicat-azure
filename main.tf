@@ -109,7 +109,7 @@ resource "azurerm_virtual_machine" "catapp" {
   vm_size             = var.vm_size
   tags = {
     Department = "devops", 
-    Billable = "true"
+    Billable = true
   }
 
   network_interface_ids         = [azurerm_network_interface.catapp-nic.id]
